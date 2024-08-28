@@ -84,5 +84,5 @@ plt.show()
 
 
 ### RESULT:
-Thus  have created the python code for the conversion of non stationary to stationary data on international airline passenger
+Thus  have created the python code for the conversion of non stationary to stationary data on student performance.
 data.
