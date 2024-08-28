@@ -5,29 +5,23 @@
  
 
 ### AIM:
-To perform regular differncing,seasonal adjustment and log transformatio on international airline passenger data
+To perform regular differncing,seasonal adjustment and log transformatio on student performance data
 ### ALGORITHM:
-1. Import the required packages like pandas and numpy
-2. Read the data using the pandas
-3. To remove any potential trends in the data
+```
+1.Import the required packages like pandas and numpy
+2.Read the data using the pandas
+3.To remove any potential trends in the data
 4.This step is applied if the data shows varying variance
 5.If the data contains seasonality, subtract a rolling mean
 6.Finally, check if the variables are stationary using the Augmented Dickey-Fuller (ADF) test
-7. Display the overall results.
+7.Display the overall results.
+```
+
 ### PROGRAM:
 ```
 import pandas as pd
-data = {
-    'Name': ['John', 'Sarah', 'Alex', 'Michael', 'Emma', 'Olivia', 'Daniel', 'Sophia', 'James', 'Isabella'],
-    'Gender': ['Male', 'Female', 'Male', 'Male', 'Female', 'Female', 'Male', 'Female', 'Male', 'Female'],
-    'Attendance': [85, 90, 78, 92, 88, 95, 70, 85, 82, 91],
-    'StudyHours': [15, 20, 10, 25, 18, 30, 8, 17, 12, 22],
-    'PreviousGrade': [78, 85, 65, 90, 82, 88, 60, 77, 70, 86],
-    'ParentalSupport': [1, 2, 0, 3, 2, 1, 0, 1, 2, 3],
-    'FinalGrade': [80, 87, 68, 92, 85, 90, 62, 78, 72, 88]
-}
-
-df = pd.DataFrame(data)
+df = pd.read_csv('student_performance.csv')
+df.head()
 print(df.head())
 
 import matplotlib.pyplot as plt
